@@ -3,6 +3,7 @@
 PYTHON := python3
 VENV := .venv
 REQUIREMENTS := requirements.txt
+UV := uv
 
 help: ## Show this help message
 	@echo 'Usage: make [target]'
@@ -11,7 +12,7 @@ help: ## Show this help message
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  %-15s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 venv: ## Create virtual environment
-	$(PYTHON) -m venv $(VENV)
+	$(UV) venv $(VENV)
 	@echo "Virtual environment created. Run 'make activate' to see activation instructions."
 
 activate: ## Show activation command for the virtual environment
@@ -19,8 +20,7 @@ activate: ## Show activation command for the virtual environment
 	@echo "  source $(VENV)/bin/activate"
 
 install: venv ## Install dependencies
-	$(VENV)/bin/pip install --upgrade pip
-	$(VENV)/bin/pip install -r $(REQUIREMENTS)
+	$(UV) pip install -r $(REQUIREMENTS) --python $(VENV)/bin/python
 	@echo "Dependencies installed successfully!"
 
 run: ## Run the application with Streamlit
@@ -52,8 +52,7 @@ clean-all: clean ## Clean everything including virtual environment
 	rm -rf $(VENV)
 
 freeze: ## Update requirements.txt with current packages
-	$(VENV)/bin/pip freeze > $(REQUIREMENTS)
+	$(UV) pip freeze --python $(VENV)/bin/python > $(REQUIREMENTS)
 
 upgrade: ## Upgrade all packages
-	$(VENV)/bin/pip install --upgrade pip
-	$(VENV)/bin/pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 $(VENV)/bin/pip install -U
+	$(UV) pip install --upgrade -r $(REQUIREMENTS) --python $(VENV)/bin/python
