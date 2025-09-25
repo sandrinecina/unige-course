@@ -115,7 +115,7 @@ ds.set_format(type="torch")
 #
 args = TrainingArguments(
     per_device_train_batch_size=1,
-    num_train_epochs=13,
+    num_train_epochs=18,
     learning_rate=4e-4,
     output_dir="./output",
     logging_steps=1,
