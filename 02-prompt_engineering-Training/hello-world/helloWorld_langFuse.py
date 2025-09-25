@@ -33,10 +33,11 @@ lf_client = Langfuse(
 #
 st.title("Prompt Engineering Sandbox")
 
-# Initialize session ID in Streamlit session state if it doesn't exist
+# Initialize session ID and user ID in Streamlit session state if it doesn't exist
 if 'session_id' not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
-# Can do the same with userID if needed
+if 'user_id' not in st.session_state:
+    st.session_state.user_id = str(uuid.uuid4())
 
 base_prompt = st.text_area("Prompt Template", "Summarize this text: {{input}}")
 user_input = st.text_input("Input Text")
@@ -63,7 +64,7 @@ if user_input:
               "model": "gpt-4.1", 
               "langfuse_tags": ["streamlit", "prompt-engineering", "example"], 
               "langfuse_session_id": st.session_state.session_id, 
-              "langfuse_user_id":str(uuid.uuid4())},
+              "langfuse_user_id": st.session_state.user_id}
     )
   output = response.choices[0].message.content
   st.write(output)

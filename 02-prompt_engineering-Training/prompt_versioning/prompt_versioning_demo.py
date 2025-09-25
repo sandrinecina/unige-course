@@ -15,14 +15,18 @@ from rich.table import Table
 from langfuse import Langfuse
 from langfuse.openai import openai as openai_client
 import uuid
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 #
 # Initialize Langfuse client
 #
 lf_client = Langfuse(
-  secret_key=os.getenv("LF_SECRET_KEY"),  # Replace with your Langfuse secret key
-  public_key=os.getenv("LF_PUBLIC_KEY"),  # Replace with your Langfuse public key
+  secret_key=os.getenv("LF_SECRET_KEY"),  
+  public_key=os.getenv("LF_PUBLIC_KEY"),  
   host="https://cloud.langfuse.com"
 )
 

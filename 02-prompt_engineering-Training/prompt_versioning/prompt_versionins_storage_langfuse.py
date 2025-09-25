@@ -1,27 +1,39 @@
-# -*- coding: utf-8 -*-
+# Use case: It's a way to store the prompts directly in LangFuse and monitor their cost, performance, etc. by prompt.
+
 """
 Minimal demo: store prompts in Langfuse, retrieve by 'production' label, run & log.
 
-Env:
-  OPENAI_API_KEY=...
-  LANGFUSE_PUBLIC_KEY=...
-  LANGFUSE_SECRET_KEY=...
-  # optional: LANGFUSE_HOST=https://cloud.langfuse.com
 """
 
 import os
 from langfuse import get_client
 from langfuse.openai import openai as openai_client
 from langfuse.api.resources.commons.errors.not_found_error import NotFoundError
+from langfuse import Langfuse
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+
+#
+# Initialize Langfuse client
+#
+lf_client = Langfuse(
+  secret_key=os.getenv("LF_SECRET_KEY"),  
+  public_key=os.getenv("LF_PUBLIC_KEY"),  
+  host="https://cloud.langfuse.com"
+)
 
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 
 PROMPTS = {
     "v1_simple_instruction": "Answer concisely:\n\n{{text}}",
-    "v2_expert_tone": "You are an expert assistant. Be thorough and helpful.\n\nUser: {{text}}\n\nAssistant:",
+    "v2_expert_tone": "You are an expert assistant. \n\nUser: {{text}}\n\nAssistant:",
+    "v3_detailed_prompt": "You are a highly knowledgeable and articulate assistant. Provide a detailed, well-structured response to the user's query. Use bullet points or numbered lists where appropriate, and ensure clarity and depth in your explanation.\n\nUser: {{text}}\n\nAssistant:",
 }
 
-QUESTION = "List three best practices for secure API design."
+QUESTION = "List the 3 best practices for nonprofit fundraising."
 
 def main():
     # Clients
@@ -44,7 +56,7 @@ def main():
     # 2) Retrieve → compile → run (auto-logged) for each version
     for name in PROMPTS:
         try:
-            p = lf.get_prompt(name, label="production")  # fetch the production-labeled version
+            p = lf.get_prompt(name, label="production")  # fetch the production-labeled version; could use the version 1 of each prompt with version=1
         except NotFoundError:
             # Fallback to latest if not labeled yet
             p = lf.get_prompt(name)
