@@ -1,0 +1,152 @@
+input_id,version,prompt,output,tokens_prompt,tokens_completion,tokens_total
+1,v1_simple_instruction,"Please answer the following question concisely:
+
+Explain the benefits of renewable energy.","Renewable energy offers several benefits:
+
+1. **Environmental Protection:** Reduces greenhouse gas emissions and air pollution.
+2. **Sustainability:** Uses resources that are naturally replenished, like sunlight and wind.
+3. **Energy Security:** Diversifies energy supply and reduces dependence on imported fuels.
+4. **Economic Growth:** Creates jobs in manufacturing, installation, and maintenance.
+5. **Public Health:** Lowers health risks associated with pollution from fossil fuels.
+6. **Stable Energy Costs:** Minimizes dependence on volatile fossil fuel prices.",23,108,131
+1,v2_contextual_instruction,"You are an expert assistant. Provide a helpful answer to the user's request below, being as informative as possible:
+
+User: Explain the benefits of renewable energy.
+
+Assistant:","Renewable energy refers to power generated from naturally replenishing sources such as sunlight, wind, water (hydro), geothermal heat, and biomass. Here are some key benefits of renewable energy:
+
+**1. Environmental Protection:**  
+Renewable energy sources produce little to no greenhouse gas emissions or air pollutants, helping to combat climate change and improve air quality.
+
+**2. Energy Security:**  
+These resources are abundant and locally available, reducing dependence on imported fuels and enhancing national energy security.
+
+**3. Sustainable Supply:**  
+Unlike fossil fuels—which are finite—renewable sources are naturally replenished and will not run out on human timescales.
+
+**4. Economic Growth and Job Creation:**  
+The renewable energy sector creates more jobs per unit of electricity generated than fossil fuel sources, supporting local economies through manufacturing, installation, and maintenance.
+
+**5. Lower Operating Costs:**  
+While initial setup can be higher, renewables have low operating and maintenance costs because there is no need to purchase fuel.
+
+**6. Public Health Benefits:**  
+Reduced air and water pollution from renewables means fewer health problems related to pollution, such as respiratory issues and water-borne illnesses.
+
+**7. Energy Access:**  
+Small-scale renewable projects (like solar panels and micro-hydro generators) can bring electricity to remote or off-grid communities, improving quality of life and economic opportunities.
+
+**8. Price Stability:**  
+Unlike fossil fuels, renewables are not subject to volatile global commodity markets, providing more stable energy prices over time.
+
+By shifting to renewable energy, societies can address climate change, promote sustainable development, and foster a healthier, more secure future.",40,326,366
+1,v3_detailed_prompt,"You are a professional technical writer. When responding:
+- Use bullet points when appropriate.
+- Keep language clear and precise.
+- Provide any relevant context.
+
+Question: Explain the benefits of renewable energy.
+
+Answer:","**Benefits of Renewable Energy:**
+
+- **Environmental Protection**
+  - Produces little or no greenhouse gas emissions, reducing air pollution.
+  - Helps combat climate change by lowering the carbon footprint.
+  - Reduces reliance on fossil fuels, decreasing harmful mining and drilling.
+
+- **Sustainability**
+  - Utilizes naturally replenishing resources (sun, wind, water, biomass).
+  - Not at risk of depletion, ensuring long-term energy availability.
+
+- **Economic Advantages**
+  - Creates jobs in manufacturing, installation, and maintenance.
+  - Reduces energy costs in the long term due to declining technology prices.
+  - Insulates economies from fossil fuel price volatility.
+
+- **Energy Security**
+  - Diversifies the energy mix and reduces dependence on imported fuels.
+  - Increases resilience against fuel supply disruptions.
+
+- **Public Health Improvements**
+  - Less air and water pollution leads to fewer health problems like respiratory diseases.
+  - Reduces healthcare costs associated with pollution-related illnesses.
+
+**Context:**  
+Renewable energy includes solar, wind, hydroelectric, geothermal, and biomass power. Adoption of these technologies is vital for a sustainable energy future and is supported by governments, organizations, and individuals worldwide.",48,242,290
+2,v1_simple_instruction,"Please answer the following question concisely:
+
+Summarize the plot of 'The Lord of the Rings' in two sentences.","A young hobbit named Frodo Baggins inherits a powerful ring that must be destroyed to prevent the dark lord Sauron from conquering Middle-earth. With the help of a fellowship of allies, Frodo faces perilous journeys and great sacrifices to ultimately destroy the ring in the fires of Mount Doom.",33,62,95
+2,v2_contextual_instruction,"You are an expert assistant. Provide a helpful answer to the user's request below, being as informative as possible:
+
+User: Summarize the plot of 'The Lord of the Rings' in two sentences.
+
+Assistant:","A young hobbit named Frodo Baggins embarks on a perilous journey to destroy a powerful ring that could enable the dark lord Sauron to conquer Middle-earth. Joined by a fellowship of allies, Frodo faces immense dangers, betrayal, and sacrifice to ensure the ring is destroyed in the fires of Mount Doom, ultimately bringing peace to the land.",50,73,123
+2,v3_detailed_prompt,"You are a professional technical writer. When responding:
+- Use bullet points when appropriate.
+- Keep language clear and precise.
+- Provide any relevant context.
+
+Question: Summarize the plot of 'The Lord of the Rings' in two sentences.
+
+Answer:","- Frodo Baggins, a hobbit from the Shire, is entrusted with the One Ring and must journey to Mount Doom in Mordor to destroy it and prevent the dark lord Sauron from reclaiming his power.  
+- Accompanied by a fellowship of allies, Frodo faces perilous challenges, while the forces of good unite to resist Sauron's armies and bring peace to Middle-earth.",58,84,142
+3,v1_simple_instruction,"Please answer the following question concisely:
+
+Translate the following sentence to French: 'Artificial intelligence is transforming the world.'",L’intelligence artificielle transforme le monde.,31,9,40
+3,v2_contextual_instruction,"You are an expert assistant. Provide a helpful answer to the user's request below, being as informative as possible:
+
+User: Translate the following sentence to French: 'Artificial intelligence is transforming the world.'
+
+Assistant:","""L'intelligence artificielle est en train de transformer le monde.""",48,13,61
+3,v3_detailed_prompt,"You are a professional technical writer. When responding:
+- Use bullet points when appropriate.
+- Keep language clear and precise.
+- Provide any relevant context.
+
+Question: Translate the following sentence to French: 'Artificial intelligence is transforming the world.'
+
+Answer:",- French translation: L’intelligence artificielle transforme le monde.,56,13,69
+4,v1_simple_instruction,"Please answer the following question concisely:
+
+List three best practices for secure API design.","1. **Use Authentication and Authorization:** Ensure that APIs require strong authentication (e.g., OAuth 2.0) and enforce proper authorization to control access to resources.
+
+2. **Validate and Sanitize Input:** Rigorously validate and sanitize all incoming data to protect against common vulnerabilities like injection attacks.
+
+3. **Implement Rate Limiting and Throttling:** Limit the number of requests a client can make to protect against abuse and denial-of-service attacks.",25,92,117
+4,v2_contextual_instruction,"You are an expert assistant. Provide a helpful answer to the user's request below, being as informative as possible:
+
+User: List three best practices for secure API design.
+
+Assistant:","Certainly! Here are three best practices for secure API design:
+
+1. **Use Strong Authentication and Authorization**  
+   Ensure that your API endpoints require proper authentication (e.g., OAuth 2.0, JWT) and only grant access to properly authorized users or applications. Apply the principle of least privilege—users and services should have the minimum permissions necessary.
+
+2. **Validate and Sanitize All Inputs**  
+   Never trust user input. Always validate and sanitize all data sent to your API to prevent common attacks such as SQL injection, cross-site scripting (XSS), and command injection. Use parameterized queries and strong data validation libraries wherever possible.
+
+3. **Implement HTTPS and Secure Data Transmission**  
+   Always use HTTPS to encrypt data transmitted between clients and your API to protect sensitive information from eavesdropping and man-in-the-middle attacks. Avoid transmitting sensitive data in URLs or as GET parameters.
+
+These practices help protect data and users, reduce vulnerabilities, and make your API more robust against attacks.",42,201,243
+4,v3_detailed_prompt,"You are a professional technical writer. When responding:
+- Use bullet points when appropriate.
+- Keep language clear and precise.
+- Provide any relevant context.
+
+Question: List three best practices for secure API design.
+
+Answer:","- **Use Strong Authentication and Authorization:**  
+  - Require robust authentication methods (e.g., OAuth 2.0, API keys, JWTs).
+  - Implement fine-grained authorization checks to ensure users access only allowed resources.
+
+- **Validate and Sanitize All Inputs:**  
+  - Enforce strict input validation to prevent injection attacks and malformed data.
+  - Sanitize user-provided data to mitigate risks like SQL injection or cross-site scripting (XSS).
+
+- **Use HTTPS for All Communications:**  
+  - Encrypt all API traffic using TLS/SSL to protect data in transit.
+  - Avoid accepting or transmitting sensitive information over unencrypted connections.
+
+**Context:**  
+These practices help prevent common vulnerabilities such as unauthorized access, data leaks, and injection attacks, contributing to a robust API security posture.",50,162,212

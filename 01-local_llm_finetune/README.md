@@ -40,3 +40,4 @@ python compare.py
 ## My notes:
 
 - When we fine-tune with 20 epochs (run our dataset 20x) we have a good results vs with 3 epochs we will have wrong answers, so it's not enought.
+- In real case scenario, you can do fine-tuning directly in Amazon Bedrock.
