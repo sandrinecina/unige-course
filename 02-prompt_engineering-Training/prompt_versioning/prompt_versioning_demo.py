@@ -6,6 +6,14 @@
 # openai: For model inference.
 # langfuse: For logging and tracing all prompt/response runs.
 #
+
+#
+# TO DO: 
+# - create prompts in Langfuse and retrieve them by name and tag (like in the other example)
+# - define dataset directly in Langfuse and retrieve it
+# - ensure group by user and session is done properly
+#
+
 import os
 import csv
 import time
@@ -69,7 +77,8 @@ console = Console()
 # build_prompt_v2: Contextual, adds persona (“You are an expert assistant…”).
 # build_prompt_v3: Very detailed, adds formatting guidelines and style.
 # Each function builds a different version of the prompt for the same input.
-# 
+# We are building three different prompt styles to compare how they affect the model's output, against the same input.
+#
 def build_prompt_v1(user_text: str) -> str:
     return f"Please answer the following question concisely:\n\n{user_text}"
 
