@@ -13,6 +13,7 @@ pip install -r requirements.txt
 ```
 
 This will install:
+
 - `streamlit` – for the chat UI.
 - `pdfplumber` – to extract text from PDFs.
 - `openai>=0.27.0` – for embeddings and chat.
@@ -49,6 +50,7 @@ This will install:
   openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
   ```
 - **Langfuse Client**:
+
   ```python
   lf_client = LangfuseClient(api_key=LF_API_KEY, workspace_id=LF_WORKSPACE_ID)
   ```
@@ -71,7 +73,7 @@ This will install:
 3. **Embedding**:
    - For each chunk, calls OpenAI embeddings (`text-embedding-3-embedding-ada-002`) and logs the call to Langfuse with `run_type="embedding"`.
 4. **Insert into Milvus**:
-   - Inserts `(chunk_id, embedding_vector, text_chunk)` for all chunks.  
+   - Inserts `(chunk_id, embedding_vector, text_chunk)` for all chunks.
    - Creates or uses an IVF_FLAT index for efficient search, then loads the collection.
 
 ### 5.3 Chat UI (Streamlit)
@@ -79,12 +81,12 @@ This will install:
 - On first run, if `collection.num_entities == 0`, shows “Indexing PDFs…” message while indexing.
 - Maintains a chat history in `st.session_state.messages`.
 - On user input:
-  1. **Embed Query**:  
+  1. **Embed Query**:
      ```python
      query_emb = call_embedding_and_log(user_input, "query")
-     ```  
+     ```
      - Logs to Langfuse with `run_type="embedding"`, `sample_id="query"`.
-  2. **Milvus Search**:  
+  2. **Milvus Search**:
      ```python
      results = collection.search(
          data=[query_emb],
@@ -93,16 +95,16 @@ This will install:
          limit=3,
          output_fields=["text"]
      )
-     ```  
+     ```
      - Retrieves top-3 most similar chunks.
-  3. **Assemble Context**:  
+  3. **Assemble Context**:
      - Concatenate retrieved chunks into a single context string.
-  4. **Call Chat**:  
+  4. **Call Chat**:
      ```python
      answer = call_chat_and_log(user_input, context, "chat_request")
-     ```  
+     ```
      - Logs to Langfuse with `run_type="chat"`, `sample_id="chat_request"`.
-  5. **Display Answer**:  
+  5. **Display Answer**:
      - Appends assistant message to chat history.
 
 ## 6. Running the App
@@ -136,3 +138,5 @@ streamlit run rag_milvus_langfuse.py
 - **Advanced Prompting**: Prepend system messages or use few-shot examples in `full_prompt`.
 
 Enjoy building and querying your RAG system with Milvus and Langfuse!
+
+## Note:

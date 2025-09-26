@@ -18,6 +18,11 @@ from pymilvus import MilvusClient, FieldSchema, DataType, Collection, Collection
 import pandas as pd
 from rich.console import Console
 import uuid
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 #
 # API and DB Client Configuration
@@ -33,6 +38,12 @@ lf_client = Langfuse(
   host="https://cloud.langfuse.com"
 )
 
+# Initialize session ID and user ID in Streamlit session state if it doesn't exist
+if 'session_id' not in st.session_state:
+    st.session_state.session_id = str(uuid.uuid4())
+if 'user_id' not in st.session_state:
+    st.session_state.user_id = str(uuid.uuid4())
+
 # Milvus connection parameters
 milvus_uri = os.getenv("MILVUS_URI")
 milvus_token = os.getenv("MILVUS_KEY")
@@ -44,8 +55,8 @@ print(f"Connected to DB: {milvus_uri} successfully")
 # Collection name for vector storage.
 # Embedding dimension matches OpenAI’s default for embedding models.
 #
-COLLECTION_NAME = "llm_papers_collection_v2"
-EMBED_DIM = 1536  # OpenAI embedding dimension
+COLLECTION_NAME = "llm_papers_collection_v4"
+EMBED_DIM = 1536  # OpenAI embedding dimension (this is given by the model)
 
 console = Console()
 
@@ -70,9 +81,9 @@ def call_embedding_and_log(text: str, sample_id: str):
             input=text, 
             metadata={"provider": "openai", 
                       "model": "text-embedding-3-small", 
-                      "langfuse_tags": ["streamlit", "prompt-engineering", "example"], 
-                      "langfuse_session_id":str(uuid.uuid4()), 
-                      "langfuse_user_id":str(uuid.uuid4()),
+                      "langfuse_tags": ["streamlit", "rag", "example"], 
+                      "langfuse_session_id": st.session_state.session_id,
+                      "langfuse_user_id": st.session_state.user_id,
                       "sample_id": sample_id,
                       }
             )
@@ -92,7 +103,7 @@ def call_chat_and_log(prompt: str, context: str, sample_id: str):
     """
     full_prompt = f"""Use the following context to answer the question: {context} 
     Question: {prompt}"""
-
+    # NB: Good practice would be not to put the prompt here, but to retrive it from our Langfuse prompt templates, so we can monitor and improve it over time.
     try:
         response = openai_client.chat.completions.create(
         name="chat",                     # shows up as trace/generation name in Langfuse
@@ -102,8 +113,8 @@ def call_chat_and_log(prompt: str, context: str, sample_id: str):
         metadata={"provider": "openai", 
                   "model": "gpt-4.1", 
                   "langfuse_tags": ["streamlit", "RAG", "example"], 
-                  "langfuse_session_id":str(uuid.uuid4()), 
-                  "langfuse_user_id":str(uuid.uuid4()),
+                  "langfuse_session_id": st.session_state.session_id,
+                  "langfuse_user_id": st.session_state.user_id,
                   "sample_id": sample_id,
                   "run_type": "chat"},
         )
@@ -123,6 +134,7 @@ def initialize_milvus():
         return client
 
     # 1) build schema
+    # in real case, we would add metadata here as well
     schema = MilvusClient.create_schema(auto_id=True, enable_dynamic_field=False)
     schema.add_field("id", DataType.INT64, is_primary=True)                 # auto_id comes from schema
     schema.add_field("chunkid", DataType.VARCHAR, max_length=65535)
@@ -154,6 +166,8 @@ def initialize_milvus():
 # Chunks text (e.g., every 1000 chars).
 # Embeds each chunk and inserts the embedding, text, and IDs into Milvus for search.
 #
+# NB: In real case, we would use llamaindex to do this directly, no need to re-invent the wheel.
+#
 def load_and_index_pdfs(milvius_client):
     """
     Load PDFs from 'pdfs/' directory, extract text, chunk, embed, and insert into Milvus.
@@ -168,9 +182,11 @@ def load_and_index_pdfs(milvius_client):
                     if text.strip():
                         docs.append((f"{filename}_page_{i}", text))
     chunks = []
+    chunk_size = 1000
+    chunk_overlap = 200  # 200 character overlap between chunks
     for doc_id, text in docs:
-        for i in range(0, len(text), 1000):
-            chunk_text = text[i:i+1000]
+        for i in range(0, len(text), chunk_size - chunk_overlap):
+            chunk_text = text[i:i+chunk_size]
             chunks.append((f"{doc_id}_chunk_{i}", chunk_text))
     data=[]
     for sample_id, chunk_text in chunks:
@@ -179,13 +195,14 @@ def load_and_index_pdfs(milvius_client):
                      "embedding": embedding, 
                      "text": chunk_text})
     milvius_client.insert(COLLECTION_NAME, data)
-    #collection.flush()
+    milvius_client.flush(COLLECTION_NAME)
 
 #
 # Streamlit App
 # App Layout and Initialization
 # Streamlit app title and config.
 # Collection is initialized; if empty, PDFs are indexed automatically.
+# In a real app, this code would be separate than the indexing, etc.
 #
 st.set_page_config(page_title="RAG with Milvus & Langfuse", layout="wide")
 st.title("📚 Retrieval-Augmented Generation (RAG) Chat")
