@@ -208,3 +208,37 @@ Use both LangChain and Llamaindex:
 Check Google Mariner: https://labs.google.com/mariner/landing
 The future of human-agent interaction.
 or: Comet Browser by Perplexity: https://www.perplexity.ai/comet
+
+---
+
+## Observability, Monitoring, Evaluation and Feedback Loop
+
+Track everything with traces by using @observe from Langfuse (e.g. 04-Agents-exercise)!
+Need to collect as many data as possible (track prompts, user inputs, outputs, latency, cost, tool use, etc.).
+Then we can make sense of the data through a dashboard that summarizes the traces.
+
+Every 6 months, go back to the raw data (traces) to see if the dashboards are still appropriate, are they missing something?
+
+Langfuse: use LLM-as-a-Judge
+
+---
+
+## Responsible AI
+
+AI should be:
+
+1. Beneficial (there must be a good reason to use AI, not only to use AI per se)
+2. Fair
+3. Transparent: we have to say what has been AI generated
+4. Accountable: we as creator of a service using AI, we are accountable for it (i.e. what the AI creates for the user) (e.g. LLM offering a car for 10k usd to a customer instead of the normal price of 40k usd --> the customer won in court, the company could not cancel this order as they are responsible to have the LLM say the right thing and do the right thing)
+5. Privacy conscious
+
+Check the model licenses to see that they are not using our data to train the model, etc.
+
+---
+
+## Data Privacy and Handling Personally Identifiable Information (PII)
+
+1. PII redaction: use automated PII detection tools (Presidio https://microsoft.github.io/presidio/, AWS Macie) before sending data to LLMs!
+2. Secure API usage: TLS, OAuth, API keys
+3. Data minimization: follow "least privilege" and "minimum necessary" principle (droit d'en connaître)
