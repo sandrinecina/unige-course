@@ -186,3 +186,25 @@ Reranking: when you retrive, you get the 10 best hotels based on similarity; the
 2. RAG
 3. Fine-tuning (if data is not changing, e.g. changes once a year, could do once a year, but cost, time and need labelled data)
 4. Pre-training
+
+---
+
+## Agents
+
+What are they? Basically they are a workflow with an LLM on top.
+
+Agent has:
+
+1. Tools
+2. Planning: e.g. reflection, self-critics, chain of thoughts, subgoal decomposition, etc.
+3. Memory
+4. Actions
+
+Use both LangChain and Llamaindex:
+
+- LangChain for orchestration, memory, decision-making and tool calling
+- Llamaindex for access to structured and unstructured external knowledge
+
+Check Google Mariner: https://labs.google.com/mariner/landing
+The future of human-agent interaction.
+or: Comet Browser by Perplexity: https://www.perplexity.ai/comet
