@@ -150,10 +150,10 @@ def sdg_tool(query: str) -> str:
                 - Do NOT use "and", "&", "/", "+", or commas inside the keyword.
 
                 NEGATIVE → POSITIVE (style mapping)
-                - "- political participation" → "- women's political participation [sdg{goal_id} {goal_name.lower()}]"
-                - "- leadership representation" → "- women's leadership representation [sdg{goal_id} {goal_name.lower()}]"
-                - "- sex" → "- sex-disaggregated data [sdg{goal_id} {goal_name.lower()}]"
-                - "- land ownership" → "- women's land ownership [sdg{goal_id} {goal_name.lower()}]"
+                - "- political participation" → "- women's political participation"
+                - "- leadership representation" → "- women's leadership representation"
+                - "- sex" → "- sex-disaggregated data"
+                - "- land ownership" → "- women's land ownership"
                 - "- percentage" → reject (unless scoped as part of a measure)
 
                 CONTEXT

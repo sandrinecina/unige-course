@@ -1,0 +1,77 @@
+{
+  "Goal 6": {
+    "name": "Ensure availability and sustainable management of water and sanitation for all",
+    "indicator_count": 11,
+    "indicators": [
+      {
+        "code": "6.1.1",
+        "description": "Proportion of population using safely managed drinking water services"
+      },
+      {
+        "code": "6.2.1",
+        "description": "Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water"
+      },
+      {
+        "code": "6.3.1",
+        "description": "Proportion of domestic and industrial wastewater flows safely treated"
+      },
+      {
+        "code": "6.3.2",
+        "description": "Proportion of bodies of water with good ambient water quality"
+      },
+      {
+        "code": "6.4.1",
+        "description": "Change in water-use efficiency over time"
+      },
+      {
+        "code": "6.4.2",
+        "description": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources"
+      },
+      {
+        "code": "6.5.1",
+        "description": "Degree of integrated water resources management"
+      },
+      {
+        "code": "6.5.2",
+        "description": "Proportion of transboundary basin area with an operational arrangement for water cooperation"
+      },
+      {
+        "code": "6.6.1",
+        "description": "Change in the extent of water-related ecosystems over time"
+      },
+      {
+        "code": "6.a.1",
+        "description": "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan"
+      },
+      {
+        "code": "6.b.1",
+        "description": "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management"
+      }
+    ],
+    "keywords": [
+      "safely managed drinking water",
+      "safely managed sanitation",
+      "hand-washing facility",
+      "soap",
+      "domestic wastewater treatment",
+      "industrial wastewater treatment",
+      "ambient water quality",
+      "water-use efficiency",
+      "water stress",
+      "freshwater withdrawal",
+      "freshwater resource",
+      "integrated water resources management",
+      "transboundary basin",
+      "water cooperation arrangement",
+      "water-related ecosystem",
+      "extent of water-related ecosystem",
+      "water-related official development assistance",
+      "government-coordinated spending plan",
+      "local administrative unit",
+      "local community participation",
+      "water and sanitation management",
+      "operational policy",
+      "operational procedure"
+    ]
+  }
+}

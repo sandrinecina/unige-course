@@ -1,0 +1,66 @@
+SDG Keywords Extraction
+==================================================
+Generated: 2025-10-02 17:42:10
+==================================================
+
+Goal 1: End poverty in all its forms everywhere
+Based on 13 indicators
+----------------------------------------
+Indicators analyzed:
+  [1.1.1] Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)
+  [1.2.1] Proportion of population living below the national poverty line, by sex and age
+  [1.2.2] Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions
+  [1.3.1] Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable
+  [1.4.1] Proportion of population living in households with access to basic services
+  [1.4.2] Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure
+  [1.5.1] Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population
+  [1.5.2] Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)
+  [1.5.3] Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030
+  [1.5.4] Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies
+  [1.a.1] Total official development assistance grants that focus on poverty reduction as a share of the recipient country’s gross national income
+  [1.a.2] Proportion of total government spending on essential services (education, health and social protection)
+  [1.b.1] Pro-poor public social spending
+
+----------------------------------------
+Extracted keywords:
+- international poverty line [sdg1 end poverty in all its forms everywhere]  
+- national poverty line [sdg1 end poverty in all its forms everywhere]  
+- multidimensional poverty [sdg1 end poverty in all its forms everywhere]  
+- poverty status [sdg1 end poverty in all its forms everywhere]  
+- child poverty [sdg1 end poverty in all its forms everywhere]  
+- older person poverty [sdg1 end poverty in all its forms everywhere]  
+- disability-related poverty [sdg1 end poverty in all its forms everywhere]  
+- unemployment-related poverty [sdg1 end poverty in all its forms everywhere]  
+- population sex-disaggregated data [sdg1 end poverty in all its forms everywhere]  
+- urban poverty [sdg1 end poverty in all its forms everywhere]  
+- rural poverty [sdg1 end poverty in all its forms everywhere]  
+- social protection coverage [sdg1 end poverty in all its forms everywhere]  
+- social protection floor [sdg1 end poverty in all its forms everywhere]  
+- child social protection [sdg1 end poverty in all its forms everywhere]  
+- unemployed social protection [sdg1 end poverty in all its forms everywhere]  
+- older person social protection [sdg1 end poverty in all its forms everywhere]  
+- person with disability social protection [sdg1 end poverty in all its forms everywhere]  
+- pregnant woman social protection [sdg1 end poverty in all its forms everywhere]  
+- newborn social protection [sdg1 end poverty in all its forms everywhere]  
+- work injury social protection [sdg1 end poverty in all its forms everywhere]  
+- vulnerable population social protection [sdg1 end poverty in all its forms everywhere]  
+- basic service household access [sdg1 end poverty in all its forms everywhere]  
+- secure land tenure [sdg1 end poverty in all its forms everywhere]  
+- land tenure legal documentation [sdg1 end poverty in all its forms everywhere]  
+- perceived land tenure security [sdg1 end poverty in all its forms everywhere]  
+- disaster-related death [sdg1 end poverty in all its forms everywhere]  
+- disaster-related missing person [sdg1 end poverty in all its forms everywhere]  
+- disaster-affected population [sdg1 end poverty in all its forms everywhere]  
+- disaster-related economic loss [sdg1 end poverty in all its forms everywhere]  
+- economic loss gdp ratio [sdg1 end poverty in all its forms everywhere]  
+- national disaster risk reduction strategy [sdg1 end poverty in all its forms everywhere]  
+- local disaster risk reduction strategy [sdg1 end poverty in all its forms everywhere]  
+- official development assistance poverty reduction [sdg1 end poverty in all its forms everywhere]  
+- government spending essential services [sdg1 end poverty in all its forms everywhere]  
+- essential health service spending [sdg1 end poverty in all its forms everywhere]  
+- essential education spending [sdg1 end poverty in all its forms everywhere]  
+- essential social protection spending [sdg1 end poverty in all its forms everywhere]  
+- pro-poor public social spending [sdg1 end poverty in all its forms everywhere]
+
+==================================================
+

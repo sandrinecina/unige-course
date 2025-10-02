@@ -1,0 +1,49 @@
+SDG Keywords Extraction
+==================================================
+Generated: 2025-10-02 17:56:59
+==================================================
+
+Goal 6: Ensure availability and sustainable management of water and sanitation for all
+Based on 11 indicators
+----------------------------------------
+Indicators analyzed:
+  [6.1.1] Proportion of population using safely managed drinking water services
+  [6.2.1] Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water
+  [6.3.1] Proportion of domestic and industrial wastewater flows safely treated
+  [6.3.2] Proportion of bodies of water with good ambient water quality
+  [6.4.1] Change in water-use efficiency over time
+  [6.4.2] Level of water stress: freshwater withdrawal as a proportion of available freshwater resources
+  [6.5.1] Degree of integrated water resources management
+  [6.5.2] Proportion of transboundary basin area with an operational arrangement for water cooperation
+  [6.6.1] Change in the extent of water-related ecosystems over time
+  [6.a.1] Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan
+  [6.b.1] Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management
+
+----------------------------------------
+Extracted keywords:
+- safely managed drinking water [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- safely managed sanitation [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- hand-washing facility [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- soap [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- domestic wastewater treatment [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- industrial wastewater treatment [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- ambient water quality [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- water-use efficiency [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- water stress [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- freshwater withdrawal [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- freshwater resource [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- integrated water resources management [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- transboundary basin [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- water cooperation arrangement [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- water-related ecosystem [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- extent of water-related ecosystem [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- water-related official development assistance [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- government-coordinated spending plan [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- local administrative unit [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- local community participation [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- water and sanitation management [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- operational policy [sdg6 ensure availability and sustainable management of water and sanitation for all]  
+- operational procedure [sdg6 ensure availability and sustainable management of water and sanitation for all]
+
+==================================================
+

@@ -1,0 +1,68 @@
+SDG Keywords Extraction
+==================================================
+Generated: 2025-10-02 17:44:54
+==================================================
+
+Goal 2: End hunger, achieve food security and improved nutrition and promote sustainable agriculture
+Based on 15 indicators
+----------------------------------------
+Indicators analyzed:
+  [2.1.1] Prevalence of undernourishment
+  [2.1.2] Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)
+  [2.2.1] Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age
+  [2.2.2] Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)
+  [2.2.3] Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)
+  [2.2.4] Prevalence of minimum dietary diversity, by population group (children aged 6 to 23.9 months and non-pregnant women aged 15 to 49 years)
+  [2.3.1] Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size
+  [2.3.2] Average income of small-scale food producers, by sex and indigenous status
+  [2.4.1] Proportion of agricultural area under productive and sustainable agriculture
+  [2.5.1] Number of (a) plant and (b) animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities
+  [2.5.2] Proportion of local and transboundary breeds classified as being at risk of extinction
+  [2.a.1] The agriculture orientation index for government expenditures
+  [2.a.2] Total official flows (official development assistance plus other official flows) to the agriculture sector
+  [2.b.1] Agricultural export subsidies
+  [2.c.1] Indicator of food price anomalies
+
+----------------------------------------
+Extracted keywords:
+- undernourishment [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- food insecurity [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- food insecurity experience scale [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- stunting [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- child stunting [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- wasting [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- child wasting [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- overweight [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- child overweight [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- malnutrition [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- child malnutrition [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- anaemia in women [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- anaemia in pregnant women [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- dietary diversity [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- minimum dietary diversity [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- production volume per labour unit [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- farming enterprise size [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- pastoral enterprise size [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- forestry enterprise size [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- small-scale food producer [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- income of small-scale food producer [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- income of women food producer [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- income of indigenous food producer [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- productive agriculture [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- sustainable agriculture [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- agricultural area under sustainable agriculture [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- plant genetic resource [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- animal genetic resource [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- conservation facility [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- breed at risk of extinction [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- local breed [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- transboundary breed [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- agriculture orientation index [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- government expenditure on agriculture [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- official development assistance to agriculture [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- official flow to agriculture sector [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- agricultural export subsidy [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]  
+- food price anomaly [sdg2 end hunger, achieve food security and improved nutrition and promote sustainable agriculture]
+
+==================================================
+

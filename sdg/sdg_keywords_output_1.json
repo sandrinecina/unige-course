@@ -1,0 +1,100 @@
+{
+  "Goal 1": {
+    "name": "End poverty in all its forms everywhere",
+    "indicator_count": 13,
+    "indicators": [
+      {
+        "code": "1.1.1",
+        "description": "Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)"
+      },
+      {
+        "code": "1.2.1",
+        "description": "Proportion of population living below the national poverty line, by sex and age"
+      },
+      {
+        "code": "1.2.2",
+        "description": "Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions"
+      },
+      {
+        "code": "1.3.1",
+        "description": "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable"
+      },
+      {
+        "code": "1.4.1",
+        "description": "Proportion of population living in households with access to basic services"
+      },
+      {
+        "code": "1.4.2",
+        "description": "Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure"
+      },
+      {
+        "code": "1.5.1",
+        "description": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population"
+      },
+      {
+        "code": "1.5.2",
+        "description": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)"
+      },
+      {
+        "code": "1.5.3",
+        "description": "Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030"
+      },
+      {
+        "code": "1.5.4",
+        "description": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies"
+      },
+      {
+        "code": "1.a.1",
+        "description": "Total official development assistance grants that focus on poverty reduction as a share of the recipient country’s gross national income"
+      },
+      {
+        "code": "1.a.2",
+        "description": "Proportion of total government spending on essential services (education, health and social protection)"
+      },
+      {
+        "code": "1.b.1",
+        "description": "Pro-poor public social spending"
+      }
+    ],
+    "keywords": [
+      "international poverty line",
+      "national poverty line",
+      "multidimensional poverty",
+      "poverty status",
+      "child poverty",
+      "older person poverty",
+      "disability-related poverty",
+      "unemployment-related poverty",
+      "population sex-disaggregated data",
+      "urban poverty",
+      "rural poverty",
+      "social protection coverage",
+      "social protection floor",
+      "child social protection",
+      "unemployed social protection",
+      "older person social protection",
+      "person with disability social protection",
+      "pregnant woman social protection",
+      "newborn social protection",
+      "work injury social protection",
+      "vulnerable population social protection",
+      "basic service household access",
+      "secure land tenure",
+      "land tenure legal documentation",
+      "perceived land tenure security",
+      "disaster-related death",
+      "disaster-related missing person",
+      "disaster-affected population",
+      "disaster-related economic loss",
+      "economic loss gdp ratio",
+      "national disaster risk reduction strategy",
+      "local disaster risk reduction strategy",
+      "official development assistance poverty reduction",
+      "government spending essential services",
+      "essential health service spending",
+      "essential education spending",
+      "essential social protection spending",
+      "pro-poor public social spending"
+    ]
+  }
+}

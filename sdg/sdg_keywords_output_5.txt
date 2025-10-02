@@ -1,6 +1,6 @@
 SDG Keywords Extraction
 ==================================================
-Generated: 2025-10-02 17:37:38
+Generated: 2025-10-02 17:56:08
 ==================================================
 
 Goal 5: Achieve gender equality and empower all women and girls
@@ -24,36 +24,37 @@ Indicators analyzed:
 
 ----------------------------------------
 Extracted keywords:
-- gender-based legal framework [sdg5 achieve gender equality and empower all women and girls]  
-- non-discrimination on the basis of sex [sdg5 achieve gender equality and empower all women and girls]  
+- gender equality [sdg5 achieve gender equality and empower all women and girls]  
+- women's empowerment [sdg5 achieve gender equality and empower all women and girls]  
+- legal framework for gender equality [sdg5 achieve gender equality and empower all women and girls]  
+- non-discrimination on basis of sex [sdg5 achieve gender equality and empower all women and girls]  
 - gender-based violence [sdg5 achieve gender equality and empower all women and girls]  
+- intimate partner violence [sdg5 achieve gender equality and empower all women and girls]  
 - physical violence against women [sdg5 achieve gender equality and empower all women and girls]  
 - sexual violence against women [sdg5 achieve gender equality and empower all women and girls]  
 - psychological violence against women [sdg5 achieve gender equality and empower all women and girls]  
-- intimate partner violence [sdg5 achieve gender equality and empower all women and girls]  
-- non-partner sexual violence [sdg5 achieve gender equality and empower all women and girls]  
+- violence against girls [sdg5 achieve gender equality and empower all women and girls]  
 - early marriage [sdg5 achieve gender equality and empower all women and girls]  
 - child marriage [sdg5 achieve gender equality and empower all women and girls]  
 - female genital mutilation [sdg5 achieve gender equality and empower all women and girls]  
 - unpaid domestic work [sdg5 achieve gender equality and empower all women and girls]  
 - unpaid care work [sdg5 achieve gender equality and empower all women and girls]  
-- time spent on unpaid work [sdg5 achieve gender equality and empower all women and girls]  
+- women's political participation [sdg5 achieve gender equality and empower all women and girls]  
 - women's parliamentary representation [sdg5 achieve gender equality and empower all women and girls]  
 - women's local government representation [sdg5 achieve gender equality and empower all women and girls]  
-- women's managerial positions [sdg5 achieve gender equality and empower all women and girls]  
-- women's decision-making on sexual relations [sdg5 achieve gender equality and empower all women and girls]  
-- women's decision-making on contraceptive use [sdg5 achieve gender equality and empower all women and girls]  
-- women's decision-making on reproductive health care [sdg5 achieve gender equality and empower all women and girls]  
-- sexual and reproductive health law [sdg5 achieve gender equality and empower all women and girls]  
+- women's managerial position [sdg5 achieve gender equality and empower all women and girls]  
+- women's decision-making autonomy [sdg5 achieve gender equality and empower all women and girls]  
+- women's sexual and reproductive health care [sdg5 achieve gender equality and empower all women and girls]  
+- women's contraceptive use [sdg5 achieve gender equality and empower all women and girls]  
+- women's sexual relation decision-making [sdg5 achieve gender equality and empower all women and girls]  
 - reproductive health information [sdg5 achieve gender equality and empower all women and girls]  
 - sexual and reproductive health education [sdg5 achieve gender equality and empower all women and girls]  
 - women's land ownership [sdg5 achieve gender equality and empower all women and girls]  
-- women's land rights [sdg5 achieve gender equality and empower all women and girls]  
-- women's control over agricultural land [sdg5 achieve gender equality and empower all women and girls]  
-- customary land tenure [sdg5 achieve gender equality and empower all women and girls]  
-- mobile telephone ownership by sex [sdg5 achieve gender equality and empower all women and girls]  
+- women's land tenure [sdg5 achieve gender equality and empower all women and girls]  
+- women's agricultural land rights [sdg5 achieve gender equality and empower all women and girls]  
+- customary land tenure for women [sdg5 achieve gender equality and empower all women and girls]  
+- mobile telephone ownership by women [sdg5 achieve gender equality and empower all women and girls]  
 - gender-responsive budgeting [sdg5 achieve gender equality and empower all women and girls]  
-- women's empowerment measures [sdg5 achieve gender equality and empower all women and girls]  
 - sex-disaggregated data [sdg5 achieve gender equality and empower all women and girls]
 
 ==================================================

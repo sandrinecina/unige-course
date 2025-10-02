@@ -1,0 +1,108 @@
+{
+  "Goal 2": {
+    "name": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+    "indicator_count": 15,
+    "indicators": [
+      {
+        "code": "2.1.1",
+        "description": "Prevalence of undernourishment"
+      },
+      {
+        "code": "2.1.2",
+        "description": "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)"
+      },
+      {
+        "code": "2.2.1",
+        "description": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age"
+      },
+      {
+        "code": "2.2.2",
+        "description": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)"
+      },
+      {
+        "code": "2.2.3",
+        "description": "Prevalence of anaemia in women aged 15 to 49 years, by pregnancy status (percentage)"
+      },
+      {
+        "code": "2.2.4",
+        "description": "Prevalence of minimum dietary diversity, by population group (children aged 6 to 23.9 months and non-pregnant women aged 15 to 49 years)"
+      },
+      {
+        "code": "2.3.1",
+        "description": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size"
+      },
+      {
+        "code": "2.3.2",
+        "description": "Average income of small-scale food producers, by sex and indigenous status"
+      },
+      {
+        "code": "2.4.1",
+        "description": "Proportion of agricultural area under productive and sustainable agriculture"
+      },
+      {
+        "code": "2.5.1",
+        "description": "Number of (a) plant and (b) animal genetic resources for food and agriculture secured in either medium- or long-term conservation facilities"
+      },
+      {
+        "code": "2.5.2",
+        "description": "Proportion of local and transboundary breeds classified as being at risk of extinction"
+      },
+      {
+        "code": "2.a.1",
+        "description": "The agriculture orientation index for government expenditures"
+      },
+      {
+        "code": "2.a.2",
+        "description": "Total official flows (official development assistance plus other official flows) to the agriculture sector"
+      },
+      {
+        "code": "2.b.1",
+        "description": "Agricultural export subsidies"
+      },
+      {
+        "code": "2.c.1",
+        "description": "Indicator of food price anomalies"
+      }
+    ],
+    "keywords": [
+      "undernourishment",
+      "food insecurity",
+      "food insecurity experience scale",
+      "stunting",
+      "child stunting",
+      "wasting",
+      "child wasting",
+      "overweight",
+      "child overweight",
+      "malnutrition",
+      "child malnutrition",
+      "anaemia in women",
+      "anaemia in pregnant women",
+      "dietary diversity",
+      "minimum dietary diversity",
+      "production volume per labour unit",
+      "farming enterprise size",
+      "pastoral enterprise size",
+      "forestry enterprise size",
+      "small-scale food producer",
+      "income of small-scale food producer",
+      "income of women food producer",
+      "income of indigenous food producer",
+      "productive agriculture",
+      "sustainable agriculture",
+      "agricultural area under sustainable agriculture",
+      "plant genetic resource",
+      "animal genetic resource",
+      "conservation facility",
+      "breed at risk of extinction",
+      "local breed",
+      "transboundary breed",
+      "agriculture orientation index",
+      "government expenditure on agriculture",
+      "official development assistance to agriculture",
+      "official flow to agriculture sector",
+      "agricultural export subsidy",
+      "food price anomaly"
+    ]
+  }
+}
