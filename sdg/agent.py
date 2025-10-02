@@ -89,11 +89,16 @@ def sdg_tool(query: str) -> str:
             goal_text += f"This Sustainable Development Goal focuses on: {goal_name}\n\n"
             goal_text += "Key indicators include:\n"
             
-            # Collect all indicator descriptions
+            # Collect all indicator descriptions with their IDs
             indicator_descriptions = []
+            indicators_with_ids = []
             for indicator in goal['indicators']:
                 indicator_descriptions.append(indicator['description'])
-                goal_text += f"- {indicator['description']}\n"
+                indicators_with_ids.append({
+                    'code': indicator['code'],
+                    'description': indicator['description']
+                })
+                goal_text += f"- [{indicator['code']}] {indicator['description']}\n"
             
             # Create a Document object for LangChain
             document = Document(page_content=goal_text, metadata={"sdg_goal": goal_id})
@@ -154,15 +159,16 @@ def sdg_tool(query: str) -> str:
                 CONTEXT
                 Goal: {goal_name}
 
-                INDICATORS
-                {chr(10).join(indicator_descriptions)}"""
+                INDICATORS (with IDs)
+                {chr(10).join([f'[{ind["code"]}] {ind["description"]}' for ind in indicators_with_ids])}"""
                 
                 # Use the openai_chat function to extract keywords
                 keywords_response = openai_chat(prompt)
                 keyword_clusters[f"Goal {goal_id}"] = {
                     "name": goal_name,
                     "keywords": keywords_response,
-                    "indicator_count": len(indicator_descriptions)
+                    "indicator_count": len(indicator_descriptions),
+                    "indicators": indicators_with_ids
                 }
         
         # Format the response
@@ -171,6 +177,63 @@ def sdg_tool(query: str) -> str:
             response += f"{goal_key}: {cluster_data['name']}\n"
             response += f"Keywords: {cluster_data['keywords']}\n"
             response += f"(Based on {cluster_data['indicator_count']} indicators)\n\n"
+        
+        # Save to output file
+        from datetime import datetime
+        output_filename = f"sdg_keywords_output_{requested_goal if requested_goal else 'all'}.txt"
+        output_path = os.path.join(os.path.dirname(__file__), output_filename)
+        
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(f"SDG Keywords Extraction\n")
+            f.write(f"{'=' * 50}\n")
+            f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(f"{'=' * 50}\n\n")
+            
+            for goal_key, cluster_data in keyword_clusters.items():
+                f.write(f"{goal_key}: {cluster_data['name']}\n")
+                f.write(f"Based on {cluster_data['indicator_count']} indicators\n")
+                f.write(f"{'-' * 40}\n")
+                
+                # Write indicators with their IDs
+                f.write("Indicators analyzed:\n")
+                for ind in cluster_data['indicators']:
+                    f.write(f"  [{ind['code']}] {ind['description']}\n")
+                f.write(f"\n{'-' * 40}\n")
+                
+                # Write keywords
+                f.write("Extracted keywords:\n")
+                f.write(f"{cluster_data['keywords']}\n")
+                f.write(f"\n{'=' * 50}\n\n")
+        
+        response += f"\n📁 Output saved to: {output_filename}"
+        
+        # Also save as JSON for programmatic use
+        json_filename = f"sdg_keywords_output_{requested_goal if requested_goal else 'all'}.json"
+        json_path = os.path.join(os.path.dirname(__file__), json_filename)
+        
+        # Prepare clean JSON data
+        json_data = {}
+        for goal_key, cluster_data in keyword_clusters.items():
+            # Parse keywords from the response string
+            keywords_list = []
+            for line in cluster_data['keywords'].strip().split('\n'):
+                if line.startswith('- '):
+                    # Remove the bullet and the [sdg... tag]
+                    keyword = line[2:].split('[sdg')[0].strip()
+                    if keyword:
+                        keywords_list.append(keyword)
+            
+            json_data[goal_key] = {
+                "name": cluster_data['name'],
+                "indicator_count": cluster_data['indicator_count'],
+                "indicators": cluster_data['indicators'],
+                "keywords": keywords_list
+            }
+        
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(json_data, f, indent=2, ensure_ascii=False)
+        
+        response += f"\n📁 JSON output saved to: {json_filename}"
         
         return response
         
@@ -236,6 +299,7 @@ OUTPUT (JSON)
       "term": "women's political participation",     // atomic & scoped
       "goal_id": "5",
       "goal_name": "Gender Equality",
+      "indicator_id": "5.5.1",                    
       "tags": ["sdg5","gender-equality"]            // include a short slug
     },
     ...

@@ -1,0 +1,97 @@
+{
+  "Goal 5": {
+    "name": "Achieve gender equality and empower all women and girls",
+    "indicator_count": 14,
+    "indicators": [
+      {
+        "code": "5.1.1",
+        "description": "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‑discrimination on the basis of sex"
+      },
+      {
+        "code": "5.2.1",
+        "description": "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age"
+      },
+      {
+        "code": "5.2.2",
+        "description": "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence"
+      },
+      {
+        "code": "5.3.1",
+        "description": "Proportion of women aged 20-24 years who were married or in a union before age 15 and before age 18"
+      },
+      {
+        "code": "5.3.2",
+        "description": "Proportion of girls and women aged 15-49 years who have undergone female genital mutilation, by age"
+      },
+      {
+        "code": "5.4.1",
+        "description": "Proportion of time spent on unpaid domestic and care work, by sex, age and location"
+      },
+      {
+        "code": "5.5.1",
+        "description": "Proportion of seats held by women in (a) national parliaments and (b) local governments"
+      },
+      {
+        "code": "5.5.2",
+        "description": "Proportion of women in managerial positions"
+      },
+      {
+        "code": "5.6.1",
+        "description": "Proportion of women aged 15-49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care"
+      },
+      {
+        "code": "5.6.2",
+        "description": "Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education"
+      },
+      {
+        "code": "5.a.1",
+        "description": "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure"
+      },
+      {
+        "code": "5.a.2",
+        "description": "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control"
+      },
+      {
+        "code": "5.b.1",
+        "description": "Proportion of individuals who own a mobile telephone, by sex"
+      },
+      {
+        "code": "5.c.1",
+        "description": "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment"
+      }
+    ],
+    "keywords": [
+      "gender-based legal framework",
+      "non-discrimination on the basis of sex",
+      "gender-based violence",
+      "physical violence against women",
+      "sexual violence against women",
+      "psychological violence against women",
+      "intimate partner violence",
+      "non-partner sexual violence",
+      "early marriage",
+      "child marriage",
+      "female genital mutilation",
+      "unpaid domestic work",
+      "unpaid care work",
+      "time spent on unpaid work",
+      "women's parliamentary representation",
+      "women's local government representation",
+      "women's managerial positions",
+      "women's decision-making on sexual relations",
+      "women's decision-making on contraceptive use",
+      "women's decision-making on reproductive health care",
+      "sexual and reproductive health law",
+      "reproductive health information",
+      "sexual and reproductive health education",
+      "women's land ownership",
+      "women's land rights",
+      "women's control over agricultural land",
+      "customary land tenure",
+      "mobile telephone ownership by sex",
+      "gender-responsive budgeting",
+      "women's empowerment measures",
+      "sex-disaggregated data"
+    ]
+  }
+}
