@@ -6,7 +6,7 @@ approaches in parallel and aggregating results.
 """
 
 from typing import Dict, List, Any
-from langfuse.decorators import observe
+from langfuse import observe
 
 
 @observe()

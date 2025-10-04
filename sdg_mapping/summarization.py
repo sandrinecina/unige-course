@@ -6,7 +6,7 @@ from NGO annual reports.
 """
 
 from typing import List, Dict, Any
-from langfuse.decorators import observe
+from langfuse import observe
 
 
 @observe()

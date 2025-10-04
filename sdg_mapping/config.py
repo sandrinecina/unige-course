@@ -5,43 +5,61 @@ This module provides configuration settings for the SDG mapping system.
 """
 
 import os
-from typing import Dict, Any
-from pydantic import BaseSettings, Field
+from typing import Dict, Any, Optional
+from pydantic import BaseSettings, Field, validator
 
 
 class SDGMappingConfig(BaseSettings):
     """Configuration for SDG Mapping system"""
     
-    # LLM settings
-    llm_provider: str = Field(default="openai", env="LLM_PROVIDER")
-    llm_model: str = Field(default="gpt-4", env="LLM_MODEL")
+    # API Keys and Secrets (from environment)
     openai_api_key: str = Field(default="", env="OPENAI_API_KEY")
-    
-    # Vector database settings
-    vector_db_type: str = Field(default="chromadb", env="VECTOR_DB_TYPE")
-    vector_db_path: str = Field(default="./chroma_db", env="VECTOR_DB_PATH")
-    embedding_model: str = Field(default="text-embedding-ada-002", env="EMBEDDING_MODEL")
-    
-    # LlamaParse settings
     llama_parse_api_key: str = Field(default="", env="LLAMA_PARSE_API_KEY")
-    
-    # Langfuse settings
-    langfuse_public_key: str = Field(default="", env="LANGFUSE_PUBLIC_KEY")
-    langfuse_secret_key: str = Field(default="", env="LANGFUSE_SECRET_KEY")
+    langfuse_public_key: str = Field(default="", env="LANGFUSE_PUBLIC_KEY", description="LF_PUBLIC_KEY also supported")
+    langfuse_secret_key: str = Field(default="", env="LANGFUSE_SECRET_KEY", description="LF_SECRET_KEY also supported")
     langfuse_host: str = Field(default="https://cloud.langfuse.com", env="LANGFUSE_HOST")
     
-    # Processing settings
-    chunk_size: int = Field(default=500, env="CHUNK_SIZE")
-    chunk_overlap: int = Field(default=50, env="CHUNK_OVERLAP")
-    max_retries: int = Field(default=3, env="MAX_RETRIES")
+    # LLM settings (configurable defaults)
+    llm_provider: str = "openai"
+    llm_model: str = "gpt-4"
+    llm_temperature: float = 0.1
     
-    # Evaluation settings
-    confidence_threshold: float = Field(default=0.5, env="CONFIDENCE_THRESHOLD")
-    top_k_results: int = Field(default=5, env="TOP_K_RESULTS")
+    # Vector database settings (configurable defaults)
+    vector_db_type: str = "chromadb"
+    vector_db_path: str = "./chroma_db"
+    embedding_model: str = "text-embedding-ada-002"
+    
+    # Processing settings (application behavior)
+    chunk_size: int = 500
+    chunk_overlap: int = 50
+    max_retries: int = 3
+    max_report_length: int = 10000  # Characters before chunking
+    
+    # Evaluation settings (application behavior)
+    confidence_threshold: float = 0.5
+    top_k_results: int = 5
+    
+    # Model parameters
+    embedding_dimension: int = 1536  # For text-embedding-ada-002
+    similarity_threshold: float = 0.7
     
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
+    
+    @validator('langfuse_public_key', pre=True)
+    def get_langfuse_public_key(cls, v):
+        if not v:
+            # Check for alternative env var name
+            v = os.getenv('LF_PUBLIC_KEY', '')
+        return v
+    
+    @validator('langfuse_secret_key', pre=True)
+    def get_langfuse_secret_key(cls, v):
+        if not v:
+            # Check for alternative env var name
+            v = os.getenv('LF_SECRET_KEY', '')
+        return v
 
 
 def get_config() -> SDGMappingConfig:

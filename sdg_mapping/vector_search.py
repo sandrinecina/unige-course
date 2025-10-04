@@ -6,7 +6,7 @@ on embeddings.
 """
 
 from typing import List, Tuple
-from langfuse.decorators import observe
+from langfuse import observe
 
 
 @observe()

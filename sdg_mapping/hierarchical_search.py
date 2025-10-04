@@ -6,7 +6,7 @@ SDG goals, then finding specific targets within those goals.
 """
 
 from typing import List, Dict
-from langfuse.decorators import observe
+from langfuse import observe
 
 
 @observe()

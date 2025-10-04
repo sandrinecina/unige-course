@@ -6,7 +6,7 @@ which SDGs apply to a project summary.
 """
 
 from typing import List, Dict
-from langfuse.decorators import observe
+from langfuse import observe
 
 
 JUDGE_PROMPT_TEMPLATE = """

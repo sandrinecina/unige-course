@@ -6,7 +6,7 @@ approaches by comparing results and calculating metrics.
 """
 
 from typing import List, Dict, Tuple
-from langfuse.decorators import observe
+from langfuse import observe
 
 
 @observe()
