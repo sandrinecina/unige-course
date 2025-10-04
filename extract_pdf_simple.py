@@ -12,7 +12,7 @@ load_dotenv()
 # Add path for imports
 sys.path.append('sdg_mapping_simple')
 
-from clients import get_mistral_document_ai_client
+from sdg_mapping_simple.clients import get_mistral_document_ai_client
 
 def main():
     if len(sys.argv) < 2:
