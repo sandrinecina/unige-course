@@ -16,8 +16,8 @@ from typing import Any
 import streamlit as st
 from streamlit.components.v1 import iframe
 
-from src.clients import get_mistral_document_ai_client
-from src.clients.mistral_document_ai_client import (
+from clients import get_mistral_document_ai_client
+from clients.mistral_document_ai_client import (
     AnnotationType,
     MistralDocumentAIError,
 )

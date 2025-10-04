@@ -25,3 +25,5 @@ numpy
 scikit-learn
 python-dotenv
 llama-parse
+pymupdf
+anthropic
