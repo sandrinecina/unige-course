@@ -1,0 +1,38 @@
+SDG Keywords Extraction
+==================================================
+Generated: 2025-10-04 13:42:46
+==================================================
+
+Goal 7: Ensure access to affordable, reliable, sustainable and modern energy for all
+Based on 6 indicators
+----------------------------------------
+Indicators analyzed:
+  [7.1.1] Proportion of population with access to electricity
+  [7.1.2] Proportion of population with primary reliance on clean fuels and technology
+  [7.2.1] Renewable energy share in the total final energy consumption
+  [7.3.1] Energy intensity measured in terms of primary energy and GDP
+  [7.a.1] International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems
+  [7.b.1] Installed renewable energy-generating capacity in developing and developed countries (in watts per capita)
+
+----------------------------------------
+Extracted keywords:
+- electricity access [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- clean fuel reliance [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- clean technology reliance [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- renewable energy share [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- total final energy consumption [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- energy intensity [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- primary energy [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- gdp [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- international financial flow [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- developing country [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- clean energy research [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- clean energy development [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- renewable energy production [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- hybrid energy system [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- installed renewable energy capacity [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- watt per capita [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]  
+- developed country [sdg7 ensure access to affordable, reliable, sustainable and modern energy for all]
+
+==================================================
+

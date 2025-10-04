@@ -18,3 +18,10 @@ fastapi
 uvicorn 
 requests
 promptlayer
+pydantic-settings
+langchain-openai
+chromadb
+numpy
+scikit-learn
+python-dotenv
+llama-parse

@@ -1,0 +1,164 @@
+{
+  "Goal 3": {
+    "name": "Ensure healthy lives and promote well-being for all at all ages",
+    "indicator_count": 28,
+    "indicators": [
+      {
+        "code": "3.1.1",
+        "description": "Maternal mortality ratio"
+      },
+      {
+        "code": "3.1.2",
+        "description": "Proportion of births attended by skilled health personnel"
+      },
+      {
+        "code": "3.2.1",
+        "description": "Under‑5 mortality rate"
+      },
+      {
+        "code": "3.2.2",
+        "description": "Neonatal mortality rate"
+      },
+      {
+        "code": "3.3.1",
+        "description": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations"
+      },
+      {
+        "code": "3.3.2",
+        "description": "Tuberculosis incidence per 100,000 population"
+      },
+      {
+        "code": "3.3.3",
+        "description": "Malaria incidence per 1,000 population"
+      },
+      {
+        "code": "3.3.4",
+        "description": "Hepatitis B incidence per 100,000 population"
+      },
+      {
+        "code": "3.3.5",
+        "description": "Number of people requiring interventions against neglected tropical diseases"
+      },
+      {
+        "code": "3.4.1",
+        "description": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease"
+      },
+      {
+        "code": "3.4.2",
+        "description": "Suicide mortality rate"
+      },
+      {
+        "code": "3.5.1",
+        "description": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders"
+      },
+      {
+        "code": "3.5.2",
+        "description": "Alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol"
+      },
+      {
+        "code": "3.6.1",
+        "description": "Death rate due to road traffic injuries"
+      },
+      {
+        "code": "3.7.1",
+        "description": "Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods"
+      },
+      {
+        "code": "3.7.2",
+        "description": "Adolescent birth rate (aged 10-14 years; aged 15-19 years) per 1,000 women in that age group"
+      },
+      {
+        "code": "3.8.1",
+        "description": "Coverage of essential health services"
+      },
+      {
+        "code": "3.8.2",
+        "description": "Proportion of population with large household expenditures on health as a share of total household expenditure or income"
+      },
+      {
+        "code": "3.9.1",
+        "description": "Mortality rate attributed to household and ambient air pollution"
+      },
+      {
+        "code": "3.9.2",
+        "description": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)"
+      },
+      {
+        "code": "3.9.3",
+        "description": "Mortality rate attributed to unintentional poisoning"
+      },
+      {
+        "code": "3.a.1",
+        "description": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older"
+      },
+      {
+        "code": "3.b.1",
+        "description": "Proportion of the target population covered by all vaccines included in their national programme"
+      },
+      {
+        "code": "3.b.2",
+        "description": "Total net official development assistance to medical research and basic health sectors"
+      },
+      {
+        "code": "3.b.3",
+        "description": "Health product access index"
+      },
+      {
+        "code": "3.c.1",
+        "description": "Health worker density and distribution"
+      },
+      {
+        "code": "3.d.1",
+        "description": "International Health Regulations (IHR) capacity and health emergency preparedness"
+      },
+      {
+        "code": "3.d.2",
+        "description": "Percentage of bloodstream infections due to selected antimicrobial-resistant organisms"
+      }
+    ],
+    "keywords": [
+      "maternal mortality",
+      "skilled birth attendance",
+      "under 5 mortality",
+      "neonatal mortality",
+      "new hiv infection",
+      "hiv infection in key population",
+      "tuberculosis incidence",
+      "malaria incidence",
+      "hepatitis b incidence",
+      "neglected tropical disease intervention",
+      "cardiovascular disease mortality",
+      "cancer mortality",
+      "diabetes mortality",
+      "chronic respiratory disease mortality",
+      "suicide mortality",
+      "substance use disorder treatment",
+      "alcohol consumption per capita",
+      "road traffic injury mortality",
+      "family planning satisfaction",
+      "modern contraceptive use",
+      "adolescent birth rate",
+      "essential health service coverage",
+      "catastrophic health expenditure",
+      "household health expenditure",
+      "household air pollution mortality",
+      "ambient air pollution mortality",
+      "unsafe water mortality",
+      "unsafe sanitation mortality",
+      "lack of hygiene mortality",
+      "unintentional poisoning mortality",
+      "tobacco use prevalence",
+      "vaccine coverage",
+      "medical research assistance",
+      "basic health sector assistance",
+      "health product access index",
+      "health worker density",
+      "health worker distribution",
+      "international health regulations capacity",
+      "health emergency preparedness",
+      "antimicrobial resistant infection",
+      "bloodstream infection",
+      "sex-disaggregated data"
+    ]
+  }
+}

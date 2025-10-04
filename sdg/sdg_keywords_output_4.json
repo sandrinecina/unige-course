@@ -1,0 +1,88 @@
+{
+  "Goal 4": {
+    "name": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+    "indicator_count": 12,
+    "indicators": [
+      {
+        "code": "4.1.1",
+        "description": "Proportion of children and young people (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex"
+      },
+      {
+        "code": "4.1.2",
+        "description": "Completion rate (primary education, lower secondary education, upper secondary education)"
+      },
+      {
+        "code": "4.2.1",
+        "description": "Proportion of children aged 24-59 months who are developmentally on track in health, learning and psychosocial well-being, by sex"
+      },
+      {
+        "code": "4.2.2",
+        "description": "Participation rate in organized learning (one year before the official primary entry age), by sex"
+      },
+      {
+        "code": "4.3.1",
+        "description": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex"
+      },
+      {
+        "code": "4.4.1",
+        "description": "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill"
+      },
+      {
+        "code": "4.5.1",
+        "description": "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated"
+      },
+      {
+        "code": "4.6.1",
+        "description": "Youth/adult literacy rate"
+      },
+      {
+        "code": "4.7.1",
+        "description": "Extent to which (i) global citizenship education and (ii) education for sustainable development are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment"
+      },
+      {
+        "code": "4.a.1",
+        "description": "Proportion of schools offering basic services, by type of service"
+      },
+      {
+        "code": "4.b.1",
+        "description": "Volume of official development assistance flows for scholarships"
+      },
+      {
+        "code": "4.c.1",
+        "description": "Proportion of teachers with the minimum required qualifications, by education level"
+      }
+    ],
+    "keywords": [
+      "minimum proficiency level in reading",
+      "minimum proficiency level in mathematics",
+      "primary education completion rate",
+      "lower secondary education completion rate",
+      "upper secondary education completion rate",
+      "developmental on track status in health",
+      "developmental on track status in learning",
+      "developmental on track status in psychosocial well-being",
+      "organized learning participation rate",
+      "formal education participation rate",
+      "non-formal education participation rate",
+      "ict skill",
+      "parity index for education",
+      "youth literacy rate",
+      "adult literacy rate",
+      "global citizenship education",
+      "education for sustainable development",
+      "national education policy",
+      "curriculum mainstreaming for global citizenship education",
+      "curriculum mainstreaming for education for sustainable development",
+      "teacher education for global citizenship education",
+      "teacher education for education for sustainable development",
+      "student assessment for global citizenship education",
+      "student assessment for education for sustainable development",
+      "basic school service",
+      "school",
+      "official development assistance for scholarship",
+      "teacher with minimum required qualification",
+      "education level of teacher",
+      "sex-disaggregated data"
+    ]
+  }
+}

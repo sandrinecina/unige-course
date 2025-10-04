@@ -1,0 +1,51 @@
+{
+  "Goal 7": {
+    "name": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+    "indicator_count": 6,
+    "indicators": [
+      {
+        "code": "7.1.1",
+        "description": "Proportion of population with access to electricity"
+      },
+      {
+        "code": "7.1.2",
+        "description": "Proportion of population with primary reliance on clean fuels and technology"
+      },
+      {
+        "code": "7.2.1",
+        "description": "Renewable energy share in the total final energy consumption"
+      },
+      {
+        "code": "7.3.1",
+        "description": "Energy intensity measured in terms of primary energy and GDP"
+      },
+      {
+        "code": "7.a.1",
+        "description": "International financial flows to developing countries in support of clean energy research and development and renewable energy production, including in hybrid systems"
+      },
+      {
+        "code": "7.b.1",
+        "description": "Installed renewable energy-generating capacity in developing and developed countries (in watts per capita)"
+      }
+    ],
+    "keywords": [
+      "electricity access",
+      "clean fuel reliance",
+      "clean technology reliance",
+      "renewable energy share",
+      "total final energy consumption",
+      "energy intensity",
+      "primary energy",
+      "gdp",
+      "international financial flow",
+      "developing country",
+      "clean energy research",
+      "clean energy development",
+      "renewable energy production",
+      "hybrid energy system",
+      "installed renewable energy capacity",
+      "watt per capita",
+      "developed country"
+    ]
+  }
+}

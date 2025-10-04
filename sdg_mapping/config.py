@@ -6,7 +6,8 @@ This module provides configuration settings for the SDG mapping system.
 
 import os
 from typing import Dict, Any, Optional
-from pydantic import BaseSettings, Field, validator
+from pydantic import Field, field_validator
+from pydantic_settings import BaseSettings
 
 
 class SDGMappingConfig(BaseSettings):
@@ -43,18 +44,20 @@ class SDGMappingConfig(BaseSettings):
     embedding_dimension: int = 1536  # For text-embedding-ada-002
     similarity_threshold: float = 0.7
     
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
+    model_config = {
+        "env_file": ".env",
+        "env_file_encoding": "utf-8",
+        "extra": "ignore"  # Ignore extra fields from .env
+    }
     
-    @validator('langfuse_public_key', pre=True)
+    @field_validator('langfuse_public_key', mode='before')
     def get_langfuse_public_key(cls, v):
         if not v:
             # Check for alternative env var name
             v = os.getenv('LF_PUBLIC_KEY', '')
         return v
     
-    @validator('langfuse_secret_key', pre=True)
+    @field_validator('langfuse_secret_key', mode='before')
     def get_langfuse_secret_key(cls, v):
         if not v:
             # Check for alternative env var name

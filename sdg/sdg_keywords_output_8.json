@@ -1,0 +1,121 @@
+{
+  "Goal 8": {
+    "name": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+    "indicator_count": 17,
+    "indicators": [
+      {
+        "code": "8.1.1",
+        "description": "Annual growth rate of real GDP per capita"
+      },
+      {
+        "code": "8.10.1",
+        "description": "(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults"
+      },
+      {
+        "code": "8.10.2",
+        "description": "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider"
+      },
+      {
+        "code": "8.2.1",
+        "description": "Annual growth rate of real GDP per employed person"
+      },
+      {
+        "code": "8.3.1",
+        "description": "Proportion of informal employment in total employment, by sector and sex"
+      },
+      {
+        "code": "8.4.1",
+        "description": "Material footprint, material footprint per capita, and material footprint per GDP"
+      },
+      {
+        "code": "8.4.2",
+        "description": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP"
+      },
+      {
+        "code": "8.5.1",
+        "description": "Average hourly earnings of employees, by sex, age, occupation and persons with disabilities"
+      },
+      {
+        "code": "8.5.2",
+        "description": "Unemployment rate, by sex, age and persons with disabilities"
+      },
+      {
+        "code": "8.6.1",
+        "description": "Proportion of youth (aged 15-24 years) not in education, employment or training"
+      },
+      {
+        "code": "8.7.1",
+        "description": "Proportion and number of children aged 5-17 years engaged in child labour, by sex and age"
+      },
+      {
+        "code": "8.8.1",
+        "description": "Fatal and non-fatal occupational injuries per 100,000 workers, by sex and migrant status"
+      },
+      {
+        "code": "8.8.2",
+        "description": "Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status"
+      },
+      {
+        "code": "8.9.1",
+        "description": "Tourism direct GDP as a proportion of total GDP and in growth rate"
+      },
+      {
+        "code": "8.9.2",
+        "description": "Employed persons in the tourism industries"
+      },
+      {
+        "code": "8.a.1",
+        "description": "Aid for Trade commitments and disbursements"
+      },
+      {
+        "code": "8.b.1",
+        "description": "Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy"
+      }
+    ],
+    "keywords": [
+      "real gdp per capita",
+      "commercial bank branch per 100000 adults",
+      "automated teller machine per 100000 adults",
+      "adult bank account ownership",
+      "adult financial institution account ownership",
+      "adult mobile money account ownership",
+      "real gdp per employed person",
+      "informal employment share",
+      "sector informal employment share",
+      "sex-disaggregated informal employment share",
+      "material footprint",
+      "material footprint per capita",
+      "material footprint per gdp",
+      "domestic material consumption",
+      "domestic material consumption per capita",
+      "domestic material consumption per gdp",
+      "average hourly earnings",
+      "sex-disaggregated hourly earnings",
+      "age-disaggregated hourly earnings",
+      "occupation-disaggregated hourly earnings",
+      "hourly earnings for persons with disabilities",
+      "unemployment rate",
+      "sex-disaggregated unemployment rate",
+      "age-disaggregated unemployment rate",
+      "unemployment rate for persons with disabilities",
+      "youth not in education employment or training",
+      "child labour",
+      "sex-disaggregated child labour",
+      "age-disaggregated child labour",
+      "occupational injury per 100000 workers",
+      "sex-disaggregated occupational injury per 100000 workers",
+      "migrant occupational injury per 100000 workers",
+      "labour rights compliance",
+      "freedom of association",
+      "collective bargaining",
+      "sex-disaggregated labour rights compliance",
+      "migrant labour rights compliance",
+      "tourism direct gdp",
+      "tourism gdp growth rate",
+      "tourism employment",
+      "aid for trade",
+      "national youth employment strategy",
+      "national employment strategy"
+    ]
+  }
+}
